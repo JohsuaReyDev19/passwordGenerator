@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: rgb(40, 139, 139);
+            padding-top: 8%;
+        }
+        .box{
+            max-width: 30vw;
+            margin: auto;
+        }
+        .input{
+            background-color: rgb(252, 252, 252);
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+        h1{
+            color: white;
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            background-color: transparent;
+            border-style: none;
+            padding-left: 20px;
+            outline: none;
+            font-size: large;
+        }
+        .input img{
+            width: 50px;
+            height: 50px;
+        }
+        button{
+            background-color: rgb(160, 173, 140);
+            border-style: none;
+            width: 220px;
+            height: 47px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        button:hover{
+            background-color: rgb(237, 238, 235);
+            color: black;
+            transition: .3s;
+        }
+        button img{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Generate a <br>
+            Password</h1>
+
+        <div class="input">
+            <input type="text" id="PasswordBox">
+            <img src="icons8-copy-96.png" onclick="copyPassword()">
+        </div>
+        <br>
+        <button onclick="generate()"><img src="icons8-thunderbolt-64.png">Generate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
